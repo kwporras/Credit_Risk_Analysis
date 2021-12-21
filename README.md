@@ -17,54 +17,46 @@ Afterword we will assess the accuracy score, confusion matrix report, and classi
 ### Resampling Models
 #### Oversampling - Naive Random 
 ![alt_text](https://github.com/kwporras/Credit_Risk_Analysis/blob/4155fbd31eb204bca97436e9f33f59b5dc120f7e/Resources/Naive_Random_Oversampling.PNG)
-Balanced Accuracy:\
-Precision Score:\
-Recall Score:\
-F1 Score:\
-Assessment:
+Balanced Accuracy: 0.64\
+Precision Score: 0.01\
+Recall Score: 0.62\
+F1 Score: 0.02
 
 #### Oversampling - SMOTE 
 ![alt_text](https://github.com/kwporras/Credit_Risk_Analysis/blob/4155fbd31eb204bca97436e9f33f59b5dc120f7e/Resources/SMOTE_Oversampling.PNG)
-Balanced Accuracy:\
-Precision Score:\
-Recall Score:\
-F1 Score:\
-Assessment:
+Balanced Accuracy: 0.65\
+Precision Score: 0.01\
+Recall Score: 0.66\
+F1 Score: 0.02
 
 #### Undersampling
 ![alt_text](https://github.com/kwporras/Credit_Risk_Analysis/blob/4155fbd31eb204bca97436e9f33f59b5dc120f7e/Resources/Undersampling.PNG)
-Balanced Accuracy:\
-Precision Score:\
-Recall Score:\
-F1 Score:\
-Assessment:
+Balanced Accuracy: 0.51\
+Precision Score: 0.01\
+Recall Score: 0.57\
+F1 Score: 0.01
 
 #### Combination (Over and Under) Sampling
 ![alt_text](https://github.com/kwporras/Credit_Risk_Analysis/blob/4155fbd31eb204bca97436e9f33f59b5dc120f7e/Resources/Combination_Over_and_Under_Sampling.PNG)
-Balanced Accuracy:\
-Precision Score:\
-Recall Score:\
-F1 Score:\
-Assessment:
+Balanced Accuracy: 0.64\
+Precision Score: 0.01\
+Recall Score: 0.69\
+F1 Score: 0.02
 
 ### Ensemble Learning Models
 #### Balanced Random Forest Classifier
 ![alt_text](https://github.com/kwporras/Credit_Risk_Analysis/blob/4155fbd31eb204bca97436e9f33f59b5dc120f7e/Resources/Balanced_random_Forest_Classifier.PNG)
-Balanced Accuracy:\
-Precision Score:\
-Recall Score:\
-F1 Score:\
-Assessment:
+Balanced Accuracy: 0.66\
+Precision Score: 0.72\
+Recall Score: 0.32\
+F1 Score: 0.44
 
 #### Easy Ensemble AdaBoost Classifier
 ![alt_text](https://github.com/kwporras/Credit_Risk_Analysis/blob/4155fbd31eb204bca97436e9f33f59b5dc120f7e/Resources/Easy_Ensemble_AdaBoost_Classifier.PNG)
-Balanced Accuracy:\
-Precision Score:\
-Recall Score:\
-F1 Score:\
-Assessment:
-
-
+Balanced Accuracy: 0.93\
+Precision Score: 0.08\
+Recall Score: 0.91\
+F1 Score: 0.14
 
 ## Summary
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+The Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier would be the two models to consider. The Precision and F1 score are higher in the Balanced Random Forest Classifier but the Easy Ensemble AdaBoost Classifier has a higher Balanced Accuracy and Recall Score. Considering the F1 score, the normally the Balanced Random Forest Classifier would be chosen, however the accuracy score is very poor at 0.66. This make the Easy Ensemble AdaBoost Classifier the most ideal model to use. That said, since the F1 score is so low I would not recommend any of the models to make a prediction.
